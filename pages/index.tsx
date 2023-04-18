@@ -4,7 +4,7 @@ import Navbar from '@components/Navbar/Navbar';
 import { TAPIAvoResponse, TProduct } from '../index';
 
 export const getServerSideProps = async () => {
- const response = await fetch('/api/avo');
+ const response = await fetch('https://platzi-avo.vercel.app/api/avo');
  const { data: productList }: TAPIAvoResponse = await response.json()
 
   return {
